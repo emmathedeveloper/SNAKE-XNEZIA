@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
+}
+@font-face {
+    font-family: 'poppins-l';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/fonts/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: 'poppins-m';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: 'poppins-b';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/fonts/Poppins-Black.ttf");
+}
+h1,h2,h3,h4,h5,h6 , li , center{
+    font-family: "poppins-b";
+}
+p , button , small , strong , option{
+    font-family: "poppins-m";
+}
+span{
+    font-family: "poppins-l";
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+*:not(.vis-scroll)::-webkit-scrollbar{
+    display: none;
+}
